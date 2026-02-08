@@ -1,16 +1,25 @@
-# React + Vite
+# IEEE SSIT SRM Student Branch 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The official website for the **IEEE Society on Social Implications of Technology (SSIT)**, SRM Kattankulathur Student Branch. This platform bridges the gap between technical innovation and societal welfare.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Blue & Gold Theme**: Aligned with IEEE global branding with a high-energy yellow accent.
+- **Dynamic Dark Mode**: Midnight tech aesthetic for low-light environments.
+- **Tailwind CSS v4**: Built using the latest CSS-in-JS utility engine for maximum performance.
+- **Fully Responsive**: Optimized for everything from mobile devices to ultra-wide monitors.
+- **Interactive UI**: Custom scroll progress bars and glassmorphism components.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React.js](https://reactjs.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Deployment**: [Netlify](https://www.netlify.com/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repo**
+   ```bash
+   git clone [https://github.com/ashneetjha/ieeesrmistssit.git](https://github.com/ashneetjha/ieeesrmistssit.git)
