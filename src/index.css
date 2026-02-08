@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  /* Vibrant Light Mode - Professional Blue & Gold */
+  --bg-main: #ffffff;
+  --bg-sec: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --primary: #00629B;      /* IEEE Blue */
+  --accent: #facc15;       /* Bright Yellow */
+  --accent-hover: #eab308;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  
+  --shadow-color: 215 25% 27%;
+  --shadow-strength: 1%;
+}
+
+[data-theme='dark'] {
+  /* Dark Mode - Midnight & Neon Gold */
+  --bg-main: #020617;      /* Deep Midnight */
+  --bg-sec: #0f172a;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --primary: #38bdf8;      /* Electric Blue for Dark Mode visibility */
+  --accent: #fbbf24;       /* Neon Gold */
+  --accent-hover: #f59e0b;
+  --card-bg: #1e293b;
+  --border: #334155;
+  
+  --shadow-color: 220 40% 2%;
+  --shadow-strength: 25%;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    @apply overflow-x-hidden m-0 antialiased;
+    font-family: sans-serif;
+  }
+}
+
+/* --- High-End Animations --- */
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.fade-in-section {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.theme-transition {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  @apply rounded-3xl transition-all duration-300;
+}
+
+.btn-gold {
+  background-color: var(--accent);
+  color: #000;
+  @apply font-extrabold transition-all duration-300 rounded-full px-6 py-2;
+}
+
+.btn-gold:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px var(--accent);
+}
